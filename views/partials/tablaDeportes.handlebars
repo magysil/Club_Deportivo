@@ -1,0 +1,28 @@
+
+    <h5 class="text-center my-3">{{titleTabla}}</h5>
+    <table class="table w-25 m-auto border">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+    <tbody>
+         {{#each dataBase}}
+                <tr data-id="{{@index}}">
+                    <td>{{@index}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{precio}}</td>
+                     <td>
+                        <div class="btn-group" role="group" >
+                            <button type="button" class="btn btn-sm btn-warning btn-editar me-1">Editar</button>
+                            <button type="button" class="btn btn-sm btn-danger btn-eliminar" >Eliminar</button>
+                        </div>
+                        {{>partials/editarPrecio}}
+                    </td>          
+                </tr>
+            {{/each}}
+    </tbody>
+    </table>

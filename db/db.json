@@ -1,0 +1,34 @@
+[
+  {
+    "nombre": "Natación",
+    "precio": "38000"
+  },
+  {
+    "nombre": "Football",
+    "precio": "35000"
+  },
+  {
+    "nombre": "Beisball",
+    "precio": "30000"
+  },
+  {
+    "nombre": "Tenis",
+    "precio": "45000"
+  },
+  {
+    "nombre": "Ping-Pong",
+    "precio": "35000"
+  },
+  {
+    "nombre": "Ciclismo",
+    "precio": "25000"
+  },
+  {
+    "nombre": "BasketBall",
+    "precio": "35000"
+  },
+  {
+    "nombre": "Boxeo",
+    "precio": "25000"
+  }
+]
