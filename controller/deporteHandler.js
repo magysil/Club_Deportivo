@@ -85,7 +85,7 @@ export const putPrecioDeporteHandler = (req,res) => {
     }
 } 
 export const deleteDeporteHandler = (req, res) => {
-    const index = req.params.id; // En este caso, el ID es el índice del elemento en el array
+    const index = req.params.id; 
     try {
         const data = fs.readFileSync(path, 'utf8');
 
