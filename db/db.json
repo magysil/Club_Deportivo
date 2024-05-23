@@ -5,23 +5,19 @@
   },
   {
     "nombre": "Football",
-    "precio": "35000"
+    "precio": "38000"
   },
   {
     "nombre": "Beisball",
     "precio": "30000"
   },
   {
-    "nombre": "Tenis",
-    "precio": "45000"
-  },
-  {
     "nombre": "Ping-Pong",
-    "precio": "35000"
+    "precio": "36000"
   },
   {
     "nombre": "Ciclismo",
-    "precio": "25000"
+    "precio": "28000"
   },
   {
     "nombre": "BasketBall",
@@ -29,6 +25,10 @@
   },
   {
     "nombre": "Boxeo",
-    "precio": "25000"
+    "precio": "27000"
+  },
+  {
+    "nombre": "Tenis",
+    "precio": "20000"
   }
 ]

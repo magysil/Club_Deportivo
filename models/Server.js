@@ -14,6 +14,7 @@ import apiRootPostDeporteRoute from '../routes/apiRootPostDeporte.routes.js'
 import apiRootGetDeporteRoute from '../routes/apiRootGetDeporte.routes.js'
 import apiRootPutDeporteRoute from '../routes/apiRootPutDeporte.routes.js'
 import apiRootDeleteDeporteRoute from '../routes/apiRootDeleteDeporte.routes.js'
+import apiRootGetDeportes from '../routes/mostrarDeportes.routes.js'
 
 
 class Server{
@@ -31,6 +32,7 @@ class Server{
             rootMostrarDeportes:'/agregar',
             rootEditarPrecioDeporte: '/editar',
             rootEliminarDeportes:'/eliminar',
+            mostrarDeportes:'/deportes'
 
         }
 
@@ -56,7 +58,7 @@ class Server{
         this.app.use(this.backEndApi.rootMostrarDeportes, apiRootGetDeporteRoute)
         this.app.use(this.backEndApi.rootEditarPrecioDeporte, apiRootPutDeporteRoute)
         this.app.use(this.backEndApi.rootEliminarDeportes, apiRootDeleteDeporteRoute)
-     
+        this.app.use(this.backEndApi.mostrarDeportes, apiRootGetDeportes)
     }
 
     initHandlebars(){

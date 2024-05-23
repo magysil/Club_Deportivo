@@ -46,7 +46,7 @@ export const getDeporteHandler = (req, res) => {
 
         try {
             const dataBase = JSON.parse(data);
-            //console.log('Base de datos de deportes:', dataBase);
+            console.log('Base de datos de deportes:', dataBase);
            
            
             res.render('home', {
@@ -107,5 +107,24 @@ export const deleteDeporteHandler = (req, res) => {
     }
 }
 
-
+export const mostrarDeportes = (req, res) => {
+    
+     fs.readFile(path, 'utf8', (err, data) => {
+         if (err) {
+             console.error('Error al leer el archivo JSON:', err);
+             return res.status(500).json({ message: 'Error interno del servidor' });
+         }
+       
+         try {
+             const dataBase = JSON.parse(data);
+             console.log('Base de datos de deportes:', dataBase);
+             res.status(200).json(dataBase)                
+             
+ 
+         } catch (error) {
+             console.error('Error al parsear los datos JSON:', error);
+             res.status(500).json({ message: 'Error interno del servidor' });
+         }
+     });
+ };
 
